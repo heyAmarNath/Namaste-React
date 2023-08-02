@@ -1,7 +1,10 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 const heading = React.createElement(
   "h1",
   { id: "title", className: "heading" },
-  "Namaste React"
+  "Namaste React from Parcel"
 );
 
 const subheading = React.createElement(
