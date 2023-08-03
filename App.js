@@ -20,11 +20,11 @@ const author = (
   </h3>
 );
 
-const container = React.createElement("div", { id: "container" }, [
-  heading,
-  subheading,
-  author,
-]);
+const container = React.createElement(
+  "div",
+  { id: "container", style: { backgroundColor: "gold" , border:"5px solid tomato"} },
+  [heading, subheading, author]
+);
 
 //REACT COMPONENT
 // -FUNCTIONAL COMPONENT
@@ -32,7 +32,7 @@ const container = React.createElement("div", { id: "container" }, [
 
 const HeaderComponent = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "tomato" }}>
       <h1>Component A</h1>
       <h2>Component B</h2>
     </div>
@@ -41,7 +41,7 @@ const HeaderComponent = () => {
 
 // Mostly use this method (skip "return")
 const HeaderComponent2 = () => (
-  <div>
+  <div style={{ backgroundColor: "dodgerblue" }}>
     {/* calling a react element inside react Component */}
     {container}
 
